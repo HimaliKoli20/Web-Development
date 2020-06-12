@@ -10,7 +10,6 @@ body{
     background-color: #ff4c68;
     color: white;
 }
-
 .row{
     margin-left: 0;
     margin-right: 0;
@@ -21,9 +20,14 @@ body{
 .row h1{
     font-family: 'Montserrat-black', sans-serif;
     font-size: 3rem;
+    font-weight: bold;
     line-height: 1.5;
 }
 
+.navbar{
+    background-color:#fa4661;
+    box-shadow: 2px 10px 15px #cc465a;
+}
 .navbar-brand{
     font-family: "Ubuntu";
     font-size: 2rem;
@@ -42,11 +46,85 @@ body{
 .dnbtn{
     margin: 5% 3% 5% 0;
 }
-
-img:first-child{
+.dnbtn:hover{
+    box-shadow: 5px 10px 15px #70686a;
+}
+.row img{
     height: 90%;
     width: 60%;
     /* margin-top: 1rem; */
     margin-left: 2rem ;
     transform: rotate(20deg);
+    
 }
+
+/* Features section  */
+
+#Features{
+    padding: 4rem 9rem 8rem 6rem;
+    /* padding: 6% 12%; */
+    text-align: center;
+}
+.features i{
+    color: #f7687e;
+    padding-bottom: 1rem;
+}
+.features i:hover{
+    color: #fa3251;
+}
+.fa-check-circle{
+    animation: flip 1s infinite alternate;
+    animation-delay: 4s;
+}
+@keyframes flip{
+    to{transform: rotateY(180deg);}
+}
+
+.fa-bullseye{
+    animation: bounce 2s infinite; 
+}
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    } 
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+} 
+
+.fa-heart{
+    animation: beat .25s infinite alternate;
+}
+@keyframes beat{
+	to { transform: scale(1.4); }
+}
+.features h3{
+    font-weight: bold;
+}
+.features p{
+    margin: auto 3rem 3rem 3rem;
+    color: grey;
+}
+
+ /* Testimonials section  */
+#testimonials{
+    padding: 7% 15%;
+    text-align: center;
+    background-color: #ef8172;
+    color: #fff;
+}
+h2{
+    font-family:' Montserrat';
+    font-weight: bold;
+    font-size: 3rem;
+    line-height: 1.5;
+}
+.testimonial-img{
+    width: 10%;
+    border-radius: 50%;
+    margin-right: 2rem;
+}
+
