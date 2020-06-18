@@ -1,5 +1,6 @@
 body{
-    font-family: 'Montserrat-black', sans-serif;  
+    font-family: 'Montserrat-black', sans-serif;
+    text-align: center;  
 }
 
 .container{
@@ -9,21 +10,21 @@ body{
 #title{
     background-color: #ff4c68;
     color: white;
+    text-align: left;
 }
 .title{
     margin-left: auto 0;
-    /* margin-right: 0; */
     padding: 80px 20px 0 30px; 
     position:relative;
     z-index: 1;
 }
-.title h1{
-    font-family: 'Montserrat-black', sans-serif;
-    font-size: 3rem;
-    font-weight: bold;
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Montserrat-Bold', sans-serif;
     line-height: 1.5;
 }
-
+.big-heading{
+    font-size: 3rem;
+}
 .navbar{
     background-color:#fa4661;
     box-shadow: 2px 10px 15px #cc465a;
@@ -34,7 +35,6 @@ body{
     font-family: "Ubuntu";
     font-size: 2rem;
     font-weight: bold;
-    color: white;
 }
 .tindog-logo{
     padding-left: 10%;
@@ -56,7 +56,7 @@ body{
 }
 .title-img{
     width: 60%;
-    margin-left: 30% ;
+    margin-left: 30%;
     transform: rotate(20deg);
     position: absolute;   
 }
@@ -75,10 +75,16 @@ body{
 
 #Features{
     padding: 7rem 9rem 7rem 6rem;
-    text-align: center;
     background-color: #fff;
     position: relative;
     z-index: 2;
+}
+.feature-heading{
+    font-weight: bold;
+}
+.features p{
+    margin: auto 3rem 3rem;
+    color: grey;
 }
 .features i{
     color: #f7687e;
@@ -116,25 +122,14 @@ body{
 @keyframes beat{
 	to { transform: scale(1.4); }
 }
-.features h3{
-    font-weight: bold;
-}
-.features p{
-    margin: auto 3rem 3rem 3rem;
-    color: grey;
-}
 
  /* Testimonials section  */
 #testimonials{
-    text-align: center;
     background-color: #ef8172;
     color: #fff;
 }
-h2{
-    font-family:' Montserrat';
-    font-weight: bold;
-    font-size: 3rem;
-    line-height: 1.5;
+.testimonial-text{
+    font-size: 2rem;
 }
 .testimonial-img{
     width: 10%;
@@ -148,7 +143,6 @@ h2{
 /* Logo section  */
 #logo{
     background-color:#ef8172;
-    text-align: center;
     padding-bottom: 2%;
 }
 .logo{
@@ -159,7 +153,9 @@ h2{
 /* Pricing section  */
 #pricing{
     padding: 5% 8%;
-    text-align: center;
+}
+.pricing-text{
+    font-weight: bold;
 }
 .btn3{
     margin-top: 8%;
@@ -169,15 +165,10 @@ h2{
  #cta{
     background-color: #ff4c68;
     color: white;
-    text-align: center;
     margin-left: auto 0;
     padding: 5% 10%; 
  }
- #cta h3{
-    font-family: 'Montserrat-black', sans-serif;
-    font-size: 3rem;
-    font-weight: bold;
-    line-height: 1.5;
+ .cta-heading{
     margin: auto 15%;
  }
 
@@ -185,7 +176,6 @@ h2{
  .footer{
     margin-left: auto 0;
     padding: 5% 10%;
-    text-align: center;
  }
  .f-icon{
      padding-left: 2%;
